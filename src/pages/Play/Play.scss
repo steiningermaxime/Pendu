@@ -1,0 +1,57 @@
+@import '../../styles/colors.scss';
+.message-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    color: $color-text;
+}
+
+.game-won {
+    border: 1px solid darken($color-primary, 10%);
+}
+
+.game-lost {
+    background-color: $color-accent;
+    border: 1px solid darken($color-accent, 10%);
+}
+
+.game-won form, .game-lost form {
+    margin-top: 15px;
+}
+
+.game-won input, .game-lost input {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; // Assurer une marge uniforme
+    border-radius: 5px;
+    border: 1px solid lighten($color-body, 20%);
+    background-color: lighten($color-background, 10%);
+    color: $color-text;
+}
+
+.game-won button, .game-lost button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: $color-text;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.game-won button {
+    background-color: $color-secondary;
+}
+
+.game-won button:hover {
+    background-color: lighten($color-secondary, 10%);
+}
+
+.game-lost button {
+    background-color: darken($color-accent, 10%);
+}
+
+.game-lost button:hover {
+    background-color: darken($color-accent, 20%);
+}

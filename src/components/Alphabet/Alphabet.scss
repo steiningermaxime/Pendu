@@ -1,0 +1,30 @@
+.alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.alphabet button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.alphabet button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.alphabet button:disabled {
+    background-color: #d0d0d0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+}

@@ -1,0 +1,30 @@
+@import '../../styles/colors.scss';
+
+.word-display{
+    padding: 10px;
+    .letter-box{
+        background-color: $color-background;
+        border: 1px solid $color-text-secondary; 
+        padding: 5px;
+        font-size: 20px;
+        margin-right: 5px;
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        border-radius: 5px;
+        color: $color-text;
+    }
+    .letter-box.empty {
+        background-color: $color-background;
+        border: 1px solid $color-text-secondary; 
+        padding: 5px;
+        font-size: 20px;
+        margin-right: 5px;
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        border-radius: 5px;
+        color: $color-text;
+    }
+    
+}
